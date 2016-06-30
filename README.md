@@ -33,3 +33,32 @@ Este campo es el encargado de hacer la condición y decidir a que persona se va 
 **idPersona**: Id único de la persona que se va a actualizar.
 
 
+#### Debe quedar así la url
+
+
+http://www.tu...com/Movil/actualizaInfoUsuario?nombre1=XXXX&nombre2=XXX&apellido1=XXX&apellido2=XXX&email=XXX&genero=XXX&imagen=XXX&idPersona=XXX
+
+
+#### Respuesta del API
+
+##### Error
+
+:::css
+(
+	{
+		"mensaje":"No se pudo actualizar la información",
+		"data":[],
+		"continuar":0
+	}
+)
+
+##### Éxito
+
+:::css
+(
+	{
+		"mensaje":"La información del usuario fue actualizada con éxito",
+		"data":"",
+		"continuar":1
+	}
+)
