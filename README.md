@@ -43,7 +43,7 @@ http://www.tu...com/Movil/actualizaInfoUsuario?nombre1=XXXX&nombre2=XXX&apellido
 
 ##### Error
 
-:::css
+* [css]
 (
 	{
 		"mensaje":"No se pudo actualizar la información",
@@ -54,7 +54,7 @@ http://www.tu...com/Movil/actualizaInfoUsuario?nombre1=XXXX&nombre2=XXX&apellido
 
 ##### Éxito
 
-:::css
+* [css]
 (
 	{
 		"mensaje":"La información del usuario fue actualizada con éxito",
