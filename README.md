@@ -43,7 +43,7 @@ http://www.tu...com/Movil/actualizaInfoUsuario?nombre1=XXXX&nombre2=XXX&apellido
 
 ##### Error
 
-:::python
+~~~html
 (
 	{
 		"mensaje":"No se pudo actualizar la información",
@@ -51,11 +51,10 @@ http://www.tu...com/Movil/actualizaInfoUsuario?nombre1=XXXX&nombre2=XXX&apellido
 		"continuar":0
 	}
 )
+~~~
 
 ##### Éxito
-
-:::python
-import abc
+~~~html
 (
 	{
 		"mensaje":"La información del usuario fue actualizada con éxito",
@@ -63,3 +62,4 @@ import abc
 		"continuar":1
 	}
 )
+~~~
