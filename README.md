@@ -100,6 +100,7 @@ Para usarlo debe acceder a la URL `http://www.tu...com/Movil/cambioClave`, pasan
 
 * **idUsuario:** Este id es el que pertenéce al login de la base de datos, se captura al momento de hacer login.
 * **clave:** Esta será la nueva contraseña que el usuario escriba, hay que recordar que en el form de cambio de clave el usuario deberá poner dos veces la clave para verificar que este bien escrita.
+* **idpersona:** Este es el id de la persona en la base de datos. También se captura en el login
 
 Es decir debe quedar de la siguiente manera `http://www.tu...com/Movil/cambioClave?idUsuario=XXXXX&clave=XXXXX`
 
