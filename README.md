@@ -3,7 +3,7 @@
 ## Actualización de la información del usuario
 
 > Para lograr la actualización de datos del usuario en la app móvil de debe seguir apuntando a la URL que ya es conocida.
-Está vez se debe llamar al metodo **actualizaInfoUsuario** el cual será el encargado de hacer la actualización.
+Está vez se debe llamar al metodo `actualizaInfoUsuario` el cual será el encargado de hacer la actualización.
 
 http://www.tu...com/Movil/actualizaInfoUsuario
 
@@ -63,5 +63,35 @@ http://www.tu...com/Movil/actualizaInfoUsuario?nombre1=XXXX&nombre2=XXX&apellido
 	}
 )
 ~~~
+
+## Recordar clave de usuario
+
+Si el usuario de la app móvil ha olvidado debe tener la forma de recordarla, por medio de este pequeño funcionamiento del api podrá hacerlo. Este funcionamiento es para aplicaciones móviles.
+
+Para poder acceder a la información debe hacer referencia a la URL que ya es conocida `http://www.tu...com/Movil/recordarClave`, luego de acceder a ella debe llamar al método `recordarClave`. Los parámetros que debe enviar a esta url son los siguientes:
+
+* email (Este será el email del usuario que olvidó la clave)
+
+la URL debe quedar de la siguiente manera:
+
+http://www.tu...com/Movil/recordarClave?email=XXXX
+
+El sistema empezará a hacer una verificación del email para ver si existe en la base de datos, el sistema retornara un arreglo en formato JSON con el estado de la transacción, la estructira del arreglo será la siguiente: 
+
+```javascript
+(
+	{
+		"mensaje":"Mensaje que avisará el estado de la transacción",
+		"data":"",
+		"continuar":1
+	}
+)
+```
+
+Las variables retornadas en el JSON indican lo siguiente:
+
+**mensaje:** Indica un mensaje de éxito o error dependiendo el caso.
+**data:** retornará información referente al proceso que se esté realizando, si es necesario.
+**continuar:** Variable que indicará 1 si es correcto el proceso ó 0 si es incorrecto
 
 - - -
