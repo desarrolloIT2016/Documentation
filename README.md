@@ -43,7 +43,7 @@ http://www.tu...com/Movil/actualizaInfoUsuario?nombre1=XXXX&nombre2=XXX&apellido
 
 ##### Error
 
-~~~html
+```javascript
 (
 	{
 		"mensaje":"No se pudo actualizar la información",
@@ -51,10 +51,10 @@ http://www.tu...com/Movil/actualizaInfoUsuario?nombre1=XXXX&nombre2=XXX&apellido
 		"continuar":0
 	}
 )
-~~~
+```
 
 ##### Éxito
-~~~html
+```javascript
 (
 	{
 		"mensaje":"La información del usuario fue actualizada con éxito",
@@ -62,7 +62,7 @@ http://www.tu...com/Movil/actualizaInfoUsuario?nombre1=XXXX&nombre2=XXX&apellido
 		"continuar":1
 	}
 )
-~~~
+```
 
 ## Recordar clave de usuario
 
@@ -90,8 +90,9 @@ El sistema empezará a hacer una verificación del email para ver si existe en l
 
 Las variables retornadas en el JSON indican lo siguiente:
 
-**mensaje:** Indica un mensaje de éxito o error dependiendo el caso.
-**data:** retornará información referente al proceso que se esté realizando, si es necesario.
-**continuar:** Variable que indicará 1 si es correcto el proceso ó 0 si es incorrecto
+* **mensaje:** Indica un mensaje de éxito o error dependiendo el caso.
+* **data:** retornará información referente al proceso que se esté realizando, si es necesario.
+* **continuar:** Variable que indicará 1 si es correcto el proceso ó 0 si es incorrecto
+
 
 - - -
