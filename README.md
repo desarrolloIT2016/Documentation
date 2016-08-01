@@ -92,7 +92,7 @@ Las variables retornadas en el JSON indican lo siguiente:
 * **continuar:** Variable que indicará 1 si es correcto el proceso ó 0 si es incorrecto
 
 
-## Cambiar clave de usuarios App móvil
+## Cambiar clave de usuarios.
 
 Esta funcionalidad le permitirá al usuario de la aplicación móvil cambiar su clave de acceso cuando lo desee.
 
