@@ -75,7 +75,7 @@ Para poder acceder a la información debe hacer referencia a la URL que ya es co
 
 la URL debe quedar de la siguiente manera:
 
-http://www.tu...com/Movil/recordarClave?email=XXXX&perfil=3
+`http://www.tu...com/Movil/recordarClave?email=XXXX&perfil=3`
 
 #### Respuesta del API
 
@@ -107,6 +107,8 @@ Para usarlo debe acceder a la URL `http://www.tu...com/Movil/cambioClave`, pasan
 * **idUsuario:** Este id es el que pertenéce al login de la base de datos, se captura al momento de hacer login.
 * **clave:** Esta será la nueva contraseña que el usuario escriba, hay que recordar que en el form de cambio de clave el usuario deberá poner dos veces la clave para verificar que este bien escrita.
 
+Es decir debe quedar de la siguiente manera `http://www.tu...com/Movil/cambioClave?idUsuario=XXXXX&clave=XXXXX`
+
 #### Respuesta del API
 
 ```javascript
@@ -123,4 +125,3 @@ Las variables retornadas en el JSON indican lo siguiente:
 * **mensaje:** Indica un mensaje de éxito o error dependiendo el caso.
 * **data:** retornará información referente al proceso que se esté realizando, si es necesario.
 * **continuar:** Variable que indicará 1 si es correcto el proceso ó 0 si es incorrecto
-- - -
