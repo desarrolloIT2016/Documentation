@@ -71,10 +71,13 @@ Si el usuario de la app móvil ha olvidado debe tener la forma de recordarla, po
 Para poder acceder a la información debe hacer referencia a la URL que ya es conocida `http://www.tu...com/Movil/recordarClave`, luego de acceder a ella debe llamar al método `recordarClave`. Los parámetros que debe enviar a esta url son los siguientes:
 
 * email (Este será el email del usuario que olvidó la clave)
+* perfil (Perfil del usuario al que se le va a recordar la clave, para el caso de app móvil debe ser **3**)
 
 la URL debe quedar de la siguiente manera:
 
-http://www.tu...com/Movil/recordarClave?email=XXXX
+http://www.tu...com/Movil/recordarClave?email=XXXX&perfil=3
+
+#### Respuesta del API
 
 El sistema empezará a hacer una verificación del email para ver si existe en la base de datos, el sistema retornara un arreglo en formato JSON con el estado de la transacción, la estructira del arreglo será la siguiente: 
 
@@ -95,4 +98,29 @@ Las variables retornadas en el JSON indican lo siguiente:
 * **continuar:** Variable que indicará 1 si es correcto el proceso ó 0 si es incorrecto
 
 
+## Cambiar clave de usuarios App móvil
+
+Esta funcionalidad le permitirá al usuario de la aplicación móvil cambiar su clave de acceso cuando lo desee.
+
+Para usarlo debe acceder a la URL `http://www.tu...com/Movil/cambioClave`, pasando los siguientes parámetros:
+
+* **idUsuario:** Este id es el que pertenéce al login de la base de datos, se captura al momento de hacer login.
+* **clave:** Esta será la nueva contraseña que el usuario escriba, hay que recordar que en el form de cambio de clave el usuario deberá poner dos veces la clave para verificar que este bien escrita.
+
+#### Respuesta del API
+
+```javascript
+(
+	{
+		"mensaje":"Mensaje que avisará el estado de la transacción",
+		"data":"",
+		"continuar":1
+	}
+)
+```
+Las variables retornadas en el JSON indican lo siguiente:
+
+* **mensaje:** Indica un mensaje de éxito o error dependiendo el caso.
+* **data:** retornará información referente al proceso que se esté realizando, si es necesario.
+* **continuar:** Variable que indicará 1 si es correcto el proceso ó 0 si es incorrecto
 - - -
