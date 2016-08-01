@@ -12,19 +12,13 @@ Se deben enviar los siguientes parámetros:
 
 #### Campos que se van a actualizar
 
-**nombre1**: Primer nombre de la persona
-
-**nombre2**: Segundo nombre de la persona
-
-**apellido1**: Primer apellido de la persona
-
-**apellido2**: Segundo apellido de la persona
-
-**email**: Email de la persona
-
-**genero**: Genero de la persona 1 Femenino, 2 Masculono, 3 Otro
-
-**imagen**: Imagen de la persona en formato Base64
+* **nombre1**: Primer nombre de la persona
+* **nombre2**: Segundo nombre de la persona
+* **apellido1**: Primer apellido de la persona
+* **apellido2**: Segundo apellido de la persona
+* **email**: Email de la persona
+* **genero**: Genero de la persona 1 Femenino, 2 Masculono, 3 Otro
+* **imagen**: Imagen de la persona en formato Base64
 
 #### Campo condicional
 
